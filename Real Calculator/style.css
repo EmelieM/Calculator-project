@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+    background-color: mistyrose;
+  }
+
+  #app h1 {
+    color: orange ;
+    text-decoration: underline;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
+
+  .calculator{
+    background-color: darkslategray;
+    border-radius: 13px;
+    border: 4px solid coral;
+    width: 550px;
+    height: 700px;
+    height: fixed;
+    width: fixed;
+  }
+
+  .display{
+    display: grid;
+    background-color: lightgreen;
+    grid-template-rows: repeat(3, 1fr) ;
+    row-gap: 7px;
+    padding: 1rem;
+    margin: 25px;
+    height: 185px;
+    height: fixed;
+    width: fixed; 
+    border: 4px solid coral;
+    border-radius: 15px;
+    font-size: 28px;
+  }
+
+  .controls{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(5, 1fr) ;
+    column-gap: 15px;
+    row-gap: 15px;
+    background-color: lightblue;
+    border: 4px solid coral;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 25px;
+    height: 420px;
+    height: fixed;
+    width: fixed;
+  }
+
+  .memory{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    grid-gap: 5px 7px;
+  }
+
+  .memory button{
+    font-size: .8rem;
+    border: 2px solid black;
+    background-color: lightsalmon;
+    padding: .5rem; 
+    cursor: pointer; 
+    border-radius: 4px;
+    height: 63px;
+  }
+
+  .operations{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr) ;
+    grid-column: 4 ;
+    grid-row: 1 / stretch;
+    grid-gap: 5px;
+
+  }
+
+  .operations button{
+    font-size: 1rem;
+    border: 2px solid black;
+    background-color: lightcoral;
+    padding: .5rem; 
+    cursor: pointer; 
+    border-radius: 4px;
+  }
+
+  .operations .equals{
+    width: 120px;
+    height: 74px; 
+    font-size: 1.5rem;
+  }
+
+  .digits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column: 1 / span 3 ;
+    grid-row: 2 / stretch ; 
+    grid-gap: 5px 5px  
+  }
+
+  .digits button{
+    border: 2px solid black;
+    background-color: lightseagreen;
+    padding: .5rem; 
+    cursor: pointer; 
+    border-radius: 40%;
+    font-size: 1.3rem;
+    height: 65px;
+    width: 80px;
+  }
+
+
+/* 
+  .bonusOps{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    grid-row: 6;
+    grid-column: 1 / 5;
+    column-gap: 5px;
+  }
+
+  .bonusOps button{
+    font-size: .8rem;
+    border: 2px solid black;
+    background-color: lightsalmon;
+    padding: .5rem; 
+    cursor: pointer; 
+    border-radius: 4px;
+    height: 63px;
+  }
+
+  .bonusOps .squareRoot{
+    font-size: 1.5rem;
+  }
+
+  .bonusOps .negative{
+    font-size: 1rem;
+  }
+
+  .bonusOps .Pi{
+    font-size: 1.5rem;
+  }
+
+   */
